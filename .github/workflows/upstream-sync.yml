@@ -23,13 +23,13 @@ jobs:
             upstream: https://github.com/Cysharp/R3.git
           - name: pkg-jolt-physics
             upstream: https://github.com/seep/JoltPhysicsUnity.git
-          - name: craft-photocraft
+          - name: software-photocraft
             upstream: https://github.com/storytold/photocraft.git
-          - name: craft-filmcraft
+          - name: software-filmcraft
             upstream: https://github.com/storytold/filmcraft.git
-          - name: craft-pdfcraft
+          - name: software-pdfcraft
             upstream: https://github.com/storytold/pdfcraft.git
-          - name: craft-wordcraft
+          - name: software-wordcraft
             upstream: https://github.com/storytold/wordcraft.git
     steps:
       - name: Sync ${{ matrix.repo.name }}

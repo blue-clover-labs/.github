@@ -17,11 +17,11 @@ Currently in active development.
 
 ## 🗂 Repository Directory (Groups & Namespaces)
 
-### 🚀 Core Products & Technology
+### 🚀 Core Products & Technology (`core-*`)
 Flagship platforms and proprietary internal architecture:
-- **`jetshark`** — JetShark Core Monorepo
-- **`jetshark-unity-sdk`** — JetShark Unity SDK: Monorepo & packages
-- **`jetshark-unity-samples`** — JetShark Unity Samples
+- **[`core-jetshark`](https://github.com/blue-clover-labs/core-jetshark)** — JetShark Core Monorepo
+- **[`core-jetshark-unity-sdk`](https://github.com/blue-clover-labs/core-jetshark-unity-sdk)** — JetShark Unity SDK: Monorepo & packages
+- **[`core-jetshark-unity-samples`](https://github.com/blue-clover-labs/core-jetshark-unity-samples)** — JetShark Unity Samples
 
 ---
 
@@ -37,14 +37,14 @@ Private high-performance mirrors with continuous upstream tracking:
 
 ---
 
-### 🎨 Creative Suite & Studio Tools (`craft-*`)
-Clean-room open-source creative suite reimplementations in pure Rust:
+### 🖥️ Creative Software & Studio Tools (`software-*`)
+Clean-room open-source creative software reimplementations in pure Rust:
 | Repository | Description | Upstream | License |
 | :--- | :--- | :--- | :--- |
-| **[`craft-photocraft`](https://github.com/blue-clover-labs/craft-photocraft)** | Pure Rust reimplementation of Adobe Photoshop | `storytold/photocraft` | Apache-2.0 |
-| **[`craft-filmcraft`](https://github.com/blue-clover-labs/craft-filmcraft)** | Pure Rust reimplementation of Adobe Premiere Pro | `storytold/filmcraft` | Apache-2.0 |
-| **[`craft-pdfcraft`](https://github.com/blue-clover-labs/craft-pdfcraft)** | Pure Rust reimplementation of Adobe Acrobat | `storytold/pdfcraft` | Apache-2.0 |
-| **[`craft-wordcraft`](https://github.com/blue-clover-labs/craft-wordcraft)** | Pure Rust reimplementation of Microsoft Word | `storytold/wordcraft` | Apache-2.0 |
+| **[`software-photocraft`](https://github.com/blue-clover-labs/software-photocraft)** | Pure Rust reimplementation of Adobe Photoshop | `storytold/photocraft` | Apache-2.0 |
+| **[`software-filmcraft`](https://github.com/blue-clover-labs/software-filmcraft)** | Pure Rust reimplementation of Adobe Premiere Pro | `storytold/filmcraft` | Apache-2.0 |
+| **[`software-pdfcraft`](https://github.com/blue-clover-labs/software-pdfcraft)** | Pure Rust reimplementation of Adobe Acrobat | `storytold/pdfcraft` | Apache-2.0 |
+| **[`software-wordcraft`](https://github.com/blue-clover-labs/software-wordcraft)** | Pure Rust reimplementation of Microsoft Word | `storytold/wordcraft` | Apache-2.0 |
 
 ---
 

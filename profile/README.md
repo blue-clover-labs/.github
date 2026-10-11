@@ -11,6 +11,43 @@ Currently in active development.
 
 🌐 [bluecloverlabs.com](https://bluecloverlabs.com) • ✉️ [danielsarabuna@gmail.com](mailto:danielsarabuna@gmail.com)
 
-<sub>© 2026 Blue Clover Labs. All rights reserved.</sub>
+</div>
 
+---
+
+## 🗂 Repository Directory (Groups & Namespaces)
+
+### 🚀 Core Products & Technology
+Flagship platforms and proprietary internal architecture:
+- **`jetshark`** — JetShark Core Monorepo
+- **`jetshark-unity-sdk`** — JetShark Unity SDK: Monorepo & packages
+- **`jetshark-unity-samples`** — JetShark Unity Samples
+
+---
+
+### 📦 GameDev & C# Runtime Packages (`pkg-*`)
+Private high-performance mirrors with continuous upstream tracking:
+| Repository | Description | Upstream | License |
+| :--- | :--- | :--- | :--- |
+| **[`pkg-unitask`](https://github.com/blue-clover-labs/pkg-unitask)** | Zero-GC efficient async/await integration for Unity | `Cysharp/UniTask` | MIT |
+| **[`pkg-memorypack`](https://github.com/blue-clover-labs/pkg-memorypack)** | Zero encoding extreme performance binary serializer | `Cysharp/MemoryPack` | MIT |
+| **[`pkg-messagepipe`](https://github.com/blue-clover-labs/pkg-messagepipe)** | High performance in-memory/distributed messaging pipeline | `Cysharp/MessagePipe` | MIT |
+| **[`pkg-r3`](https://github.com/blue-clover-labs/pkg-r3)** | Next-generation reactive programming for .NET and Unity | `Cysharp/R3` | MIT |
+| **[`pkg-jolt-physics`](https://github.com/blue-clover-labs/pkg-jolt-physics)** | Jolt Physics bindings for Unity (AAA physics engine) | `seep/JoltPhysicsUnity` | MIT |
+
+---
+
+### 🎨 Creative Suite & Studio Tools (`craft-*`)
+Clean-room open-source creative suite reimplementations in pure Rust:
+| Repository | Description | Upstream | License |
+| :--- | :--- | :--- | :--- |
+| **[`craft-photocraft`](https://github.com/blue-clover-labs/craft-photocraft)** | Pure Rust reimplementation of Adobe Photoshop | `storytold/photocraft` | Apache-2.0 |
+| **[`craft-filmcraft`](https://github.com/blue-clover-labs/craft-filmcraft)** | Pure Rust reimplementation of Adobe Premiere Pro | `storytold/filmcraft` | Apache-2.0 |
+| **[`craft-pdfcraft`](https://github.com/blue-clover-labs/craft-pdfcraft)** | Pure Rust reimplementation of Adobe Acrobat | `storytold/pdfcraft` | Apache-2.0 |
+| **[`craft-wordcraft`](https://github.com/blue-clover-labs/craft-wordcraft)** | Pure Rust reimplementation of Microsoft Word | `storytold/wordcraft` | Apache-2.0 |
+
+---
+
+<div align="center">
+<sub>© 2026 Blue Clover Labs. All rights reserved.</sub>
 </div>

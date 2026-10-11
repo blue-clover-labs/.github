@@ -1,0 +1,49 @@
+name: Upstream Sync Mirrors
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # Every night at 04:00 UTC
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Sync Mirror Repositories
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo:
+          - name: pkg-unitask
+            upstream: https://github.com/Cysharp/UniTask.git
+          - name: pkg-memorypack
+            upstream: https://github.com/Cysharp/MemoryPack.git
+          - name: pkg-messagepipe
+            upstream: https://github.com/Cysharp/MessagePipe.git
+          - name: pkg-r3
+            upstream: https://github.com/Cysharp/R3.git
+          - name: pkg-jolt-physics
+            upstream: https://github.com/seep/JoltPhysicsUnity.git
+          - name: craft-photocraft
+            upstream: https://github.com/storytold/photocraft.git
+          - name: craft-filmcraft
+            upstream: https://github.com/storytold/filmcraft.git
+          - name: craft-pdfcraft
+            upstream: https://github.com/storytold/pdfcraft.git
+          - name: craft-wordcraft
+            upstream: https://github.com/storytold/wordcraft.git
+    steps:
+      - name: Sync ${{ matrix.repo.name }}
+        env:
+          SYNC_TOKEN: ${{ secrets.SYNC_PAT }}
+        run: |
+          if [ -z "$SYNC_TOKEN" ]; then
+            echo "::warning::SYNC_PAT secret is not configured in organization settings. Please add a Personal Access Token with repo scope."
+            exit 0
+          fi
+          echo "Starting mirror sync for ${{ matrix.repo.name }} from ${{ matrix.repo.upstream }}..."
+          git clone --bare "https://x-access-token:${SYNC_TOKEN}@github.com/blue-clover-labs/${{ matrix.repo.name }}.git" repo_dir
+          cd repo_dir
+          git remote add upstream ${{ matrix.repo.upstream }}
+          git fetch upstream --tags --force
+          git push "https://x-access-token:${SYNC_TOKEN}@github.com/blue-clover-labs/${{ matrix.repo.name }}.git" 'refs/remotes/upstream/*:refs/heads/*' --tags --force
+          echo "Sync completed for ${{ matrix.repo.name }}!"
